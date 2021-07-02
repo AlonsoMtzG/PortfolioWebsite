@@ -1,14 +1,37 @@
 * {
   font-family: "Poppins", sans-serif;
-  color: white;
   box-sizing: border-box;
+}
+
+:root {
+  --main-color: #7716f6;
 }
 
 /* - - General - - */
 
 body {
-  background-color: #7716f6;
-  padding: 10px 30px;
+  color: white;
+  margin: 0;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white 50%,
+    var(--main-color) 50%,
+    var(--main-color) 100%
+  );
+}
+
+.main-color-bg {
+  background-color: var(--main-color);
+}
+
+.first-section-rounded {
+  border-radius: 0 0 0 100px;
+}
+
+.body-wraper {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 nav {
@@ -19,13 +42,15 @@ nav {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-size: 60px;
   margin: 0;
 }
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 p {
@@ -34,7 +59,6 @@ p {
 
 main {
   /*border: 1px solid red;*/
-  padding: 0 50px;
 }
 
 .content-wraper {
@@ -63,7 +87,18 @@ main {
   background: linear-gradient(rgba(119, 22, 246, 1) 0%, rgb(105, 20, 218) 100%);
 }
 
+#home,
+#aboutme,
+#tools,
+#portfolio {
+  height: 100vh;
+}
+
 /* - - Header - - */
+
+header {
+  padding-top: 15px;
+}
 
 .topnav-right {
   display: inline-flex;
@@ -79,7 +114,7 @@ main {
 
 #home {
   /*border: 1px solid greenyellow;*/
-  height: 90vh;
+  padding-left: 70px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -97,7 +132,7 @@ main {
 /* Buttons */
 #home .download-btn {
   background-color: white;
-  color: #7716f6;
+  color: var(--main-color);
   margin-right: 10px;
 }
 
@@ -140,7 +175,6 @@ main {
 #aboutme {
   /*border: 1px solid greenyellow;*/
   display: flex;
-  height: 90vh;
   justify-content: center;
 }
 
@@ -160,4 +194,20 @@ main {
 .rounded-rect .left-wraper {
   /*border: 1px solid goldenrod;*/
   width: 55%;
+}
+
+/* - - Tools - - */
+
+.white-bg {
+  background-color: white;
+  border-radius: 0 100px 100px 0;
+}
+
+.white-bg h2,
+h3 {
+  color: var(--main-color);
+}
+
+.white-bg p {
+  color: #707070;
 }
