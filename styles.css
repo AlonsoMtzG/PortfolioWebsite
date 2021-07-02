@@ -1,0 +1,35 @@
+* {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #7716f6;
+  padding: 10px 30px;
+}
+
+nav {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: small;
+}
+
+.topnav-right {
+  display: inline-flex;
+  width: 30%;
+  justify-content: space-around;
+}
+
+.topnav-right a {
+  text-decoration: none;
+}
+
+.topnav-right a:hover {
+  font-weight: 600;
+}
+
+.content h1 p:first-child {
+  color: rgba(255, 255, 255, 0.45);
+}
