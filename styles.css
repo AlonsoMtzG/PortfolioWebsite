@@ -13,7 +13,28 @@ nav {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
-  font-size: small;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.btn {
+  display: inline-flex;
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 40px;
 }
 
 .topnav-right {
@@ -22,14 +43,65 @@ nav {
   justify-content: space-around;
 }
 
-.topnav-right a {
-  text-decoration: none;
-}
-
 .topnav-right a:hover {
   font-weight: 600;
 }
 
-.content h1 p:first-child {
+main {
+  /*border: 1px solid red;*/
+  padding: 0 50px;
+}
+
+.content-wraper {
+  /*border: 1px solid black;*/
+}
+
+.description {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.home {
+  /*border: 1px solid greenyellow;*/
+  height: 90vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.home h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.home h1 p:first-child {
+  /* hey there! */
   color: rgba(255, 255, 255, 0.45);
+  margin-bottom: -20px;
+}
+
+.home .description {
+  margin-bottom: 35px;
+}
+
+/* Buttons */
+.home .download-btn {
+  background-color: white;
+  color: #7716f6;
+  margin-right: 10px;
+}
+
+.logos-wraper {
+  /*border: 1px solid red;*/
+  display: inline-flex;
+  width: 20%;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.logo-img {
+  width: 25px;
+}
+
+#behance {
+  width: 35px;
+  margin: auto;
 }
