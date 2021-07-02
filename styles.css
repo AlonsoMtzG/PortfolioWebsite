@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* - - General - - */
+
 body {
   background-color: #7716f6;
   padding: 10px 30px;
@@ -16,35 +18,18 @@ nav {
   font-size: 14px;
 }
 
+h1,
+h2 {
+  font-size: 60px;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
 
 p {
   margin: 0;
-}
-
-.btn {
-  display: inline-flex;
-  width: 130px;
-  height: 40px;
-  font-size: 14px;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 40px;
-}
-
-.topnav-right {
-  display: inline-flex;
-  width: 30%;
-  justify-content: space-around;
-}
-
-.topnav-right a:hover {
-  font-weight: 600;
 }
 
 main {
@@ -60,35 +45,71 @@ main {
   font-family: "Noto Sans", sans-serif;
 }
 
-.home {
+.btn {
+  display: inline-flex;
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 40px;
+}
+
+.btn:hover {
+  background: rgb(119, 22, 246);
+  background: linear-gradient(rgba(119, 22, 246, 1) 0%, rgb(105, 20, 218) 100%);
+}
+
+/* - - Header - - */
+
+.topnav-right {
+  display: inline-flex;
+  width: 30%;
+  justify-content: space-around;
+}
+
+.topnav-right a:hover {
+  font-weight: 600;
+}
+
+/* - - Home - - */
+
+#home {
   /*border: 1px solid greenyellow;*/
   height: 90vh;
   display: table-cell;
   vertical-align: middle;
 }
 
-.home h1 {
-  font-size: 60px;
-  margin: 0;
-}
-
-.home h1 p:first-child {
+#home h1 p:first-child {
   /* hey there! */
   color: rgba(255, 255, 255, 0.45);
   margin-bottom: -20px;
 }
 
-.home .description {
+#home .description {
   margin-bottom: 35px;
 }
 
 /* Buttons */
-.home .download-btn {
+#home .download-btn {
   background-color: white;
   color: #7716f6;
   margin-right: 10px;
 }
 
+#home .download-btn:hover {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    rgba(255, 255, 255, 1) 0%,
+    rgb(238, 238, 238) 100%
+  );
+}
+
+/* Logos */
 .logos-wraper {
   /*border: 1px solid red;*/
   display: inline-flex;
@@ -101,7 +122,42 @@ main {
   width: 25px;
 }
 
+.logo-img:hover {
+  width: 30px;
+}
+
 #behance {
   width: 35px;
   margin: auto;
+}
+
+#behance:hover {
+  width: 40px;
+}
+
+/* - - About me - - */
+
+#aboutme {
+  /*border: 1px solid greenyellow;*/
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+}
+
+#aboutme .content-wraper {
+  display: inline-flex;
+  align-items: center;
+}
+
+.rounded-rect {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  width: 70vw;
+  height: 65vh;
+  padding: 3% 5%;
+}
+
+.rounded-rect .left-wraper {
+  /*border: 1px solid goldenrod;*/
+  width: 55%;
 }
