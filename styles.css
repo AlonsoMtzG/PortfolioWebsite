@@ -48,6 +48,10 @@ h3 {
   margin: 0;
 }
 
+h1 {
+  font-size: max(4.5vw, 35px);
+}
+
 a {
   text-decoration: none;
   color: white;
