@@ -1,73 +1,91 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo_AG.svg" />
+    <link rel="apple-touch-icon" href="./assets/logo_AG-01.png" />
     <title>Alonso García</title>
     <meta name="description" content="Alonso Garcia's Web Portfolio" />
     <meta name="keywords" content="programador, desarrollador, programmer, projects, software, developer, app, web" />
     <meta name="author" content="Alonso García" />
     <meta name="copyright" content="Alonso García" />
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-        <!-- Here starts the header -->
-        <header class="main-color-bg">
-            <div class="body-wraper">
-                <nav>
-                    <div class="topnav-left">
-                        Alonso García <b>|</b> Software Developer
-                    </div>
-                    <div class="topnav-right">
-                        <a class="active" href="#home">home</a>
-                        <a href="#aboutme">about me</a>
-                        <a href="#portfolio">portfolio</a>
-                        <a href="#contact">contact</a>
-                    </div>
-                </nav>
+    <!-- Here starts the header -->
+    <header class="main-color-bg" id="topHeader">
+        <div class="body-wraper">
+            <div class="header-left">
+                <b>AG</b> | Software Development
             </div>
-        </header>
+            <nav class="header-right" id="header--nav">
+                <div class="navA-wraper">
+                    <a href="#home" onclick="toggleNavStyle()">home</a>
+                    <a href="#aboutme" onclick="toggleNavStyle()">about me</a>
+                    <a href="#portfolio" onclick="toggleNavStyle()">portfolio</a>
+                    <a href="#contact" onclick="toggleNavStyle()">contact</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNavStyle()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
 
-        <!-- Here starts the content -->
+    <!-- Here starts the content -->
     <main>
         <div class="main-color-bg first-section-rounded">
             <div class="body-wraper">
+                <!-- HOME section -->
                 <section id="home">
                     <div class="content-wraper">
                         <h1>
                             <p>hey there!</p>
                             <p>i am Alonso García</p>
                         </h1>
-                        <p class="description">I'm a Software Developer, UI/UX Designer and Front-End and Back-end Developer.</p>
-                        <a href="assets/Coursera G84X3D2X2ZA5.pdf" download target="_blank" class="btn download-btn">Download CV</a>
-                        <a href="#contact" class="btn">Get in touch</a><br>
+                        <p class="description">I'm a Computer Engineering student. Here you can find some of the
+                            projects I've done. <em class="bold">Feel free to look around!</em></p>
+                        <div class="buttons-wraper">
+                            <a href="assets/Resume Alonso García.pdf" target="_blank" class="btn">Download CV</a>
+                            <a href="#contact" class="btn button-2">Get in touch</a><br>
+                        </div>
                         <div class="logos-wraper">
-                            <a href="https://github.com/AlonsoMtzG" target="_blank"><img src="./assets/logo_github.png" alt="github" class="logo-img"></a>
-                            <a href="https://www.behance.net/" target="_blank"><img src="./assets/logo_behance.png" alt="behance" class="logo-img" id="behance"></a>
-                            <a href="https://www.linkedin.com/in/alonso-garcía" target="_blank"><img src="./assets/logo_linkedin.png" alt="github" class="logo-img"></a>
+                            <a href="https://github.com/AlonsoMtzG" target="_blank"><img src="./assets/logo_github.svg"
+                                    alt="github" class="logo-img"></a>
+                            <a href="https://www.linkedin.com/in/alonso-garcía" target="_blank"><img
+                                    src="./assets/logo_linkedin.svg" alt="linkedin" class="logo-img"></a>
                         </div>
                     </div>
                 </section>
+                <!-- ABOUT ME section -->
                 <section id="aboutme">
                     <div class="content-wraper">
                         <div class="rounded-rect">
                             <div class="left-wraper">
                                 <h2>about me</h2>
-                                <p class="description">I am a student of Computer Technology Engineering at Tecnológico de Monterrey. I love sports, learning to play
-                                instruments, although I'm not that good, and among my passions is the world of technology, web design, mobile
-                                applications, data science and artificial intelligence.<br><br>
-                                
-                                One of the main objectives of my work is to empathize with the user and design solutions to their possible problems.<br><br>
-                                
-                                I'm always learning with new projects and taking courses and I'm here to help you transform your dreams into a real
-                                product.</p>
+                                <div class="description-wraper">
+                                    <p class="description">I am a student of <i>Computer Technology Engineering</i> at
+                                        <b class="bold">Tecnológico de Monterrey</b> in <i>Guadalajara (México)</i>. I
+                                        love sports, especially
+                                        soccer, and among my passions is the world of technology, web design, mobile
+                                        applications and data science.</p>
+                                    <p class="description">I am always learning with new projects, taking courses; I am
+                                        looking for <b class="bold">challenges</b>, so I would love to work with you.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-wraper">
+                                <img src="./assets/alonso-png.png" alt="alonsogarcía" class="alonso-img">
                             </div>
                         </div>
                     </div>
@@ -77,17 +95,19 @@
 
         <div class="white-bg">
             <div class="body-wraper">
+                <!-- TOOLS section -->
                 <section id="tools">
                     <div class="content-wraper">
                         <div class="right-wraper">
                             <div class="title">
                                 <div class="title-wraper">
                                     <h3>tools</h3>
-                                    <p class="description">These are some of the tools I have worked with and am constantly learning for the development of my projects.</p>
+                                    <p class="description">These are some of the tools I have worked with and am
+                                        constantly learning for the development of my projects.</p>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="left-wraper">
                             <div class="table">
                                 <div class="table-wraper">
@@ -99,12 +119,12 @@
                                     <div class="row">
                                         <img src="./assets/c++.png" alt="c++" class="tools-img">
                                         <img src="./assets/java.png" alt="java" class="tools-img">
-                                        <img src="./assets/react.png" alt="react" class="tools-img fixed-img">
+                                        <img src="./assets/react.png" alt="react" class="tools-img react">
                                         <img src="./assets/html.png" alt="html" class="tools-img">
                                         <img src="./assets/css.png" alt="css" class="tools-img">
                                     </div>
                                     <div class="row">
-                                        <img src="./assets/mysql.png" alt="mysql" class="tools-img fixed-img">
+                                        <img src="./assets/mysql.png" alt="mysql" class="tools-img mysql">
                                         <img src="./assets/figma.png" alt="figma" class="tools-img">
                                         <img src="./assets/adobe xd.png" alt="adobexd" class="tools-img">
                                     </div>
@@ -113,7 +133,7 @@
                         </div>
                     </div>
                 </section>
-
+                <!-- PORTFOLIO section -->
                 <section id="portfolio">
                     <div class="content-wraper">
                         <h2>my projects</h2>
@@ -124,7 +144,7 @@
                                 <div class="project-title">Feedback Channel</div>
                                 <div class="project-description">
                                     <p>Web platform to track
-                                    complaints and suggestions within the company</p>
+                                        complaints and suggestions within the company</p>
                                 </div>
                                 <div class="gradient"></div>
                             </div>
@@ -133,12 +153,12 @@
                                 <div class="project-title">HiTec Questionnaire</div>
                                 <div class="project-description">
                                     <p>Official site of the event for the new students of
-                                    Tecnológico de Monterrey, where a questionnaire is
-                                    answered and a student group is suggested according to
-                                    the answers.<br/></p>
+                                        Tecnológico de Monterrey, where a questionnaire is
+                                        answered and a student group is suggested according to
+                                        the answers.<br /></p>
                                     <div class="project-btns--container">
-                                    <a href="https://hitec.tecoding.org" target="_blank">Visit Site</a>
-                                    <a href="https://github.com/TECoding/hitec-2021" target="_blank">GitHub Repo</a>
+                                        <a href="https://hitec.tecoding.org" target="_blank">Visit Site</a>
+                                        <a href="https://github.com/TECoding/hitec-2021" target="_blank">GitHub Repo</a>
                                     </div>
                                 </div>
                                 <div class="gradient"></div>
@@ -148,22 +168,55 @@
                                 <div class="project-title">My Portfolio</div>
                                 <div class="project-description">
                                     <p>My web portfolio to show who I
-                                    am, what I do, the projects I have done and the tools I
-                                    have used for them.</p>
+                                        am, what I do, the projects I have done and the tools I
+                                        have used for them.</p>
                                 </div>
                                 <div class="gradient"></div>
                             </div>
                         </div>
-                        <a href='https://www.freepik.com/psd/mockup' class="freepick">Mockup created by jcomp - www.freepik.com</a>
+                        <a href='https://www.freepik.com/psd/mockup' class="freepick">Mockup created by jcomp -
+                            www.freepik.com</a>
                     </div>
                 </section>
             </div>
         </div>
-    </main>
 
-    <!-- Here starts the footer -->
-    <footer>
-    </footer>
+        <div class="main-color-bg second-section-rounded">
+            <!-- CONTACT section -->
+            <section id="contact">
+                <div class="content-wraper">
+                    <div class="title">
+                        <h2>contact</h2>
+                        <p class="description contact--description">I'm looking forward to start a project with you.</p>
+                        <div class="contact-info--wraper">
+                            <div class="contact--info">
+                                <img src="./assets/icon_email.svg" alt="email" class="icon">
+                                <p class="description">luisalonsomtzg@gmail.com</p>
+                            </div>
+                            <div class="contact--info">
+                                <img src="./assets/icon_location.svg" alt="location" class="icon">
+                                <p class="description">Zapopan, Jalisco, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="rounded-rect" name="contact" method="POST" data-netlify="true">
+                        <div class="form-wraper">
+                            <p class="description">Fill the form. Send me a message.</p>
+                            <input required type="email" placeholder="Email" id="email" name="email" maxlength="50">
+                            <input required type="text" placeholder="Name" id="name" name="name" required minlength="4"
+                                maxlength="30">
+                            <input required type="text" placeholder="Subject" id="subject" name="subject" minlength="3"
+                                maxlength="30">
+                            <textarea required placeholder="Message" id="message" name="message" minlength="5"
+                                maxlength="300"></textarea>
+                            <input type="submit" value="Send" class="btn">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+    </main>
 </body>
 
 </html>
