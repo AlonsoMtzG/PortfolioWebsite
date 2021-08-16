@@ -458,6 +458,10 @@ img.mysql {
   text-transform: uppercase;
 }
 
+#portfolio .project-img--container #onlyRepo {
+  justify-content: center;
+}
+
 #portfolio .project-img--container:hover .gradient {
   animation-duration: 0.3s;
   animation-name: slideup;
