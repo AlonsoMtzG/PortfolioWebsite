@@ -258,8 +258,10 @@ nav .navA-wraper {
 }
 
 .rounded-rect .right-wraper {
-  display: contents;
+  display: inline-flex;
   width: 45%;
+  justify-content: center;
+  align-items: center;
 }
 
 #aboutme .description-wraper {
@@ -276,10 +278,8 @@ nav .navA-wraper {
 }
 
 #aboutme .alonso-img {
-  width: 350px;
-  -ms-transform: translate(10%, 0);
-  transform: translate(10%, 0);
-  mix-blend-mode: hard-light;
+  border-radius: 35px;
+  height: 85%;
 }
 
 /* - - - White Section - - - */
@@ -668,11 +668,13 @@ textarea {
   #portfolio .freepick {
     display: none;
   }
+}
 
+@media (max-width: 960px) {
   /* About Me */
 
   #aboutme .alonso-img {
-    transform: translate(0, 0);
+    height: 75%;
   }
 }
 
